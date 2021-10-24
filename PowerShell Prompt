@@ -3,3 +3,9 @@
 # In PowerShell, install Oh My Posh
 winget install JanDeDobbeleer.OhMyPosh
 
+# In PowerShell, run the following to install
+Install-Module -Name Terminal-Icons -Repository PSGallery
+
+# Edit the $PROFILE and add the following lines
+oh-my-posh --init --shell pwsh --config ~/jandedobbeleer.omp.json | Invoke-Expression
+Import-Module -Name Terminal-Icons
